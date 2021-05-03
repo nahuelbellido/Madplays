@@ -1,0 +1,295 @@
+$width: 1980px;
+$height: 1080px;
+
+
+body {	
+  max-width: $width;
+  max-height: $height;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  }
+
+    
+.logo1 {
+  margin: -55px 50px;
+} 
+
+
+.ul {display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 10px;
+		justify-content:end;
+		list-style-type: none;
+		text-align: left;
+		
+
+}
+
+.ul__li{
+
+    text-decoration: none;
+    color: black;
+		margin-right: 50px;
+    padding: 0 4px;
+}
+
+.banner {
+  width: $width -10; /*ejemplo operaciones*/
+  height: $height/2;/*ejemplo operaciones*/
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -55px;
+  }
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+
+
+}
+
+.main--color{
+  color: white;
+  background: black;
+      
+  }
+
+
+.footer{
+  color: white;
+  background: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+        
+}
+
+.footer__link{
+  align-items: center;
+}
+
+.footer__logo{
+  margin: -1px 15px
+}
+
+.footer--link { 
+  text-decoration: none;
+  color: white;
+
+}
+
+/*ejemplo de bucle*/
+@for $size from 1 through 5 {
+.titulos-#{$size} { font-size: 10pt * $size;}
+}
+
+.grid { 
+  display: grid;
+  width: 1700px;
+  height: 100vh;
+  font-size: 24pt;
+  margin: 50px  ;
+  border: solid 10px black ;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 10px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 10px;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #145204;
+  background-image: linear-gradient(315deg, #145204 30%, #f53844 70%);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  }
+
+
+      /* Grid pestaña noticias*/
+
+.noticias{
+
+  display: inline-grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 100px;
+  margin: 100px;
+  justify-content: start;
+  align-items: center;
+  }
+
+  .parrafo {
+		text-align: center;
+		}
+
+.h2noticias {
+		color:black;
+		background: white;
+    text-decoration: none;
+	
+		}
+
+/* css E-SPORTS*/
+
+.intro{
+	margin: 50px 10px 50px 10px;
+	padding: 25px;
+	font-size: 15pt;
+}
+.roster{
+
+	display: grid;
+	width: 1700px;
+	height: 600px;
+	font-size: 24pt;
+	margin: 50px  ;
+	border: solid 3px black ;
+	grid-template-columns: auto auto auto auto auto auto;
+
+	grid-template-rows: auto auto auto auto;
+	
+
+	
+}
+.Destacado2{
+	font-family:Arial;
+	font-weight:bold;
+	background-color:#1748e7;
+	border: solid 3px black ;
+	padding: auto;
+	text-align: center;
+	
+  }
+
+
+.borderColumnas {border: solid 3px black ;
+	padding: auto;
+	text-align: center;
+	
+
+}
+
+.ColumnasPais {border: solid 3px black ;
+	padding: auto;
+	text-align: center;
+	background-color:#b90d0da8;
+}
+
+
+.CampeonatoTitulo {font-size: 16pt;
+	width: 400px;
+	background-color: red;
+	text-align: center;
+	margin:20px auto 20px auto ;
+	border: solid black 2px;
+}
+
+.RosterTitulo {font-size: 16pt;
+	width: 400px;
+	background-color: rgb(3, 103, 170);
+	text-align: center;
+	margin:20px auto 20px auto ;
+	border: solid black 2px;
+}
+
+.PartidaTitulo {font-size: 16pt;
+	width: 800px;
+	background-color: #0ce6ee;
+		background-image: linear-gradient(100deg, #0ce6ee 45%, #0735b3 45%);
+
+	text-align: center;
+	margin:20px auto 20px auto ;
+	border: solid black 2px;
+}
+
+.PartidaVideo {
+	margin: 50px 200px 50px 320px;
+}
+
+
+table{
+	width:1100px;
+	margin:20px auto 20px auto;
+	color:white;
+	text-align:center;
+  }
+  tr{
+	cursor:pointer;
+  }
+  .destacado{
+	font-family:Arial;
+	font-weight:bold;
+	background-color:#0D6859;
+  }
+  .fondo1{
+	background-color:#7AB318;
+  }
+  .fondo1:hover{
+	color:black;
+	background-color:#00aa00;
+  }
+  .fondo2{
+	 background-color:#A0C55E;
+  }
+  .fondo2:hover{
+	color:black;
+	background-color:#007700;
+  }
+
+  /*Articulos*/
+.caja {
+	border: solid 7px black ;
+	margin: 100px 550px 100px 550px;
+	width: 780px;
+	padding: 30px 10px 10px 20px;
+	background-color: whitesmoke;
+	
+}
+
+.articulo {
+	font-size: 15pt;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+#h1 {
+	text-align: left; 
+	font-family: Arial Black; 
+	font-weight: bold; font-size: 50px; 
+	background: #202020; 
+	-webkit-background-clip: text; 
+	-moz-background-clip: text; 
+	background-clip: text; 
+	color: transparent; 
+	text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+	}
+
+	.img {
+		float: left;
+	  }
+
+
+.img2{
+display:block;
+margin:auto;
+}
+
+.img3 {
+	float: right;
+  }
+
+
+.color {
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(237,7,7,1) 28%, rgba(204,6,6,1) 68%, rgba(0,0,0,1) 96%);
+
+	padding: -70px;
+	margin: -70px;
+}
